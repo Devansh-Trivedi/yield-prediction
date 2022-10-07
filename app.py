@@ -6,7 +6,14 @@ import pickle
 import warnings
 
 
-st.beta_set_page_config(page_title="Crop Recommender", page_icon="🌿", layout='centered', initial_sidebar_state="collapsed")
+# st.beta_set_page_config(page_title="Crop Recommender", page_icon="🌿", layout='centered', initial_sidebar_state="collapsed")
+
+st.set_page_config(
+	layout="centered",  # Can be "centered" or "wide". In the future also "dashboard", etc.
+	initial_sidebar_state="collapsed",  # Can be "auto", "expanded", "collapsed"
+	page_title="Yield Prediciton",  # String or None. Strings get appended with "• Streamlit". 
+	page_icon="🌿",  # String, anything supported by st.image, or None.
+)
 
 # st.title('Yield Prediciton')
 # st.('🌿')
